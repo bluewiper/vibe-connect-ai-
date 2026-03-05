@@ -1,0 +1,121 @@
+/**
+ * VibeConnect - 링크드인 네이티브 버튼과 동일한 톤의 UI
+ * LinkedIn primary 버튼: #0a66c2 배경, 흰색 텍스트, 24px 둥근 pill 형태
+ */
+
+.vibe-connect-wrapper {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 0;
+  min-height: 32px;
+  flex-shrink: 0;
+}
+
+/* 링크드인 기본 Primary 버튼 스타일 (Post / 댓글 전송 버튼과 동일) */
+.vibe-connect-ai-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 6px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #fff;
+  background-color: #0a66c2;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.vibe-connect-ai-button:hover:not(:disabled) {
+  background-color: #004182;
+}
+
+.vibe-connect-ai-button:active:not(:disabled) {
+  background-color: #003358;
+}
+
+.vibe-connect-ai-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.vibe-connect-ai-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(10, 102, 194, 0.35);
+}
+
+.vibe-connect-ai-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(10, 102, 194, 0.5);
+}
+
+/* 추천 댓글 선택 패널 */
+.vibe-connect-choice-panel {
+  position: fixed;
+  z-index: 10000;
+  min-width: 280px;
+  max-width: 420px;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.vibe-connect-choice-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #000000e6;
+}
+
+.vibe-connect-choice-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  text-align: left;
+  background: #f3f6f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #000000e6;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.vibe-connect-choice-item:hover {
+  background: #e8f0f8;
+  border-color: #0a66c2;
+}
+
+.vibe-connect-choice-close {
+  margin-top: 4px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.vibe-connect-choice-close:hover {
+  background: #f3f6f8;
+  color: #0a66c2;
+}

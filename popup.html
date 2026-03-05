@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeConnect 설정</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .popup-body {
+      width: 320px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+    .popup-body h1 {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000000e6;
+    }
+    .popup-body p {
+      margin: 0 0 12px 0;
+      font-size: 13px;
+      color: #00000099;
+      line-height: 1.4;
+    }
+    .popup-body label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #000000e6;
+    }
+    .popup-body input[type="password"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .popup-body input[type="password"]:focus {
+      outline: none;
+      border-color: #0a66c2;
+      box-shadow: 0 0 0 1px #0a66c2;
+    }
+    .popup-body .btn-save {
+      width: 100%;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      background: #0a66c2;
+      color: #fff;
+    }
+    .popup-body .btn-save:hover {
+      background: #004182;
+    }
+    .popup-body .btn-test {
+      width: 100%;
+      margin-top: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid #0a66c2;
+      border-radius: 24px;
+      cursor: pointer;
+      background: #fff;
+      color: #0a66c2;
+    }
+    .popup-body .btn-test:hover {
+      background: #f3f6f8;
+    }
+    .popup-body .btn-test:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .popup-body .status {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #057642;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body class="popup-body">
+  <h1>VibeConnect</h1>
+  <p>댓글 추천을 쓰려면 OpenAI API 키를 넣어 주세요. 키는 이 기기에만 저장되고, Vibe AI 쓸 때만 OpenAI로 보내져요.</p>
+  <label for="api-key">OpenAI API 키</label>
+  <input type="password" id="api-key" placeholder="sk-..." autocomplete="off">
+  <button type="button" class="btn-save" id="save-key">저장</button>
+  <button type="button" class="btn-test" id="test-key">연결 테스트</button>
+  <div class="status" id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

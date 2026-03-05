@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "VibeConnect",
+  "version": "1.0.0",
+  "description": "링크드인 댓글 작성을 돕는 AI 어시스턴트",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://linkedin.com/*",
+    "https://api.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "VibeConnect 설정"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://linkedin.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
