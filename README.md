@@ -1,40 +1,41 @@
-# VibeConnect
+# 🚀 VibeConnect AI: LinkedIn Personal Branding Assistant
 
-링크드인 댓글 작성을 돕는 Chrome 확장 프로그램. 게시물을 읽고 어울리는 댓글 3개를 추천해 줍니다.
+Stop wasting hours thinking about what to comment on LinkedIn. **VibeConnect AI** helps you generate insightful, human-like comments in seconds using GPT-4o, right inside your browser.
 
-- **Manifest V3** 기반
-- OpenAI **GPT-4o-mini** 사용 (본인 API 키 필요)
-- API 키는 브라우저 로컬에만 저장되며, Vibe AI 사용 시에만 OpenAI로 전송됩니다.
+---
 
-## 설치 방법
+## ✨ Key Features
+- **One-Click Generation:** No more tab-switching. Generate replies directly on the LinkedIn feed.
+- **Tone Selection:** Choose from 4+ styles (Professional, Insightful, Agree, Question).
+- **Privacy First:** We **NEVER** store your data or API keys. Everything runs locally in your browser.
+- **Bring Your Own Key (BYOK):** Use your own OpenAI API key. You only pay for what you use (literally pennies).
 
-1. 이 저장소를 클론하거나 ZIP으로 다운로드합니다.
-2. Chrome에서 `chrome://extensions` 접속 → **개발자 모드** 켜기.
-3. **압축 해제된 확장 프로그램을 로드합니다** → 프로젝트 폴더 선택.
+## 🛠️ Why I Built This
+I wanted to grow my network on LinkedIn, but the "mental friction" of writing 20+ comments a day was real. Existing tools were either too expensive ($30+/mo) or felt like spammy bots. I "vibe-coded" this tool to keep the human element while removing the friction.
 
-## 사용 방법
+---
 
-1. 확장 프로그램 아이콘 클릭 → **OpenAI API 키** 입력 후 **저장** → **연결 테스트**로 확인.
-2. [LinkedIn](https://www.linkedin.com) 피드에서 댓글을 달 게시물의 **댓글**을 연 뒤, 댓글 입력창 **바로 위**에 있는 **Vibe AI** 버튼 클릭.
-3. 추천 댓글 3개 중 마음에 드는 것을 선택하면 댓글창에 자동으로 입력됩니다.
+## 🚀 How to Install (No-Cost & Open Source)
 
-## 프로젝트 구조
+Since this is an early-stage project, you can install it manually in **Developer Mode**:
 
-```
-vibe-connect-ai/
-├── manifest.json   # 확장 프로그램 설정 (Manifest V3)
-├── content.js      # 링크드인 페이지에 버튼 삽입 및 AI 댓글 요청
-├── popup.html      # 설정 팝업 UI
-├── popup.js        # API 키 저장/연결 테스트
-├── styles.css      # 버튼·선택 패널 스타일
-└── README.md
-```
+1. **Download this repository** as a ZIP file and extract it.
+2. Open Chrome and go to `chrome://extensions/`.
+3. Enable **"Developer mode"** in the top right corner.
+4. Click **"Load unpacked"** and select the folder where you extracted the files.
+5. Go to LinkedIn, click the VibeConnect icon, and **enter your OpenAI API Key**.
+6. Start engaging like a pro! 🚀
 
-## 요구 사항
+---
 
-- Chrome (또는 Chromium 기반 브라우저)
-- [OpenAI API 키](https://platform.openai.com/api-keys) (결제 설정된 계정 권장)
+## 🔒 Security & Privacy
+- This extension is **Open Source**. You can audit the code to see exactly how your API key is handled.
+- Your API key is stored securely in `chrome.storage.local` and is only used to call the OpenAI API.
+- No external servers, no tracking, no data collection.
 
-## 라이선스
+## 💬 Feedback
+This is an MVP built in 24 hours. If you have any feature requests or find a bug, please **open an Issue** or reach out!
 
-MIT
+---
+
+**Built with 💡 and Vibe Coding.**
